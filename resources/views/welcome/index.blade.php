@@ -1,6 +1,7 @@
 <x-app-layout>
     <div class="home-banner">
         <div class="p-5 home_banner">
+            <div class="container wrapper">
                 <div class="row">
                     <div class="col-md-7">
                         <h2 class=" home_banner_title">Focus on your business' growth.</h2>
@@ -17,6 +18,7 @@
 
                     </div>                
                 </div>
+            </div>
                
         </div>
     </div>
@@ -187,6 +189,8 @@
             </div>
         </div>
     </div>
+    
+   
 
     
 </x-app-layout>

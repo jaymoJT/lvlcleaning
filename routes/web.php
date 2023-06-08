@@ -2,6 +2,14 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\RegularcleaningController;
+use App\Http\Controllers\DeepcleaningController;
+use App\Http\Controllers\CommercialcleaningController;
+use App\Http\Controllers\CarpetcleaningController;
+use App\Http\Controllers\IndustrialcleaningController;
+use App\Http\Controllers\PostconstructioncleaningController;
+use App\Http\Controllers\AfterpartycleaningController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +29,16 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::resource('/', WelcomeController::class );
+Route::resource('/about', AboutController::class);
+Route::resource('/services/regular-cleaning', RegularcleaningController::class);
+Route::resource('/services/deep-cleaning', DeepcleaningController::class);
+Route::resource('/services/commercial-cleaning', CommercialcleaningController::class);
+Route::resource('/services/carpet-cleaning', CarpetcleaningController::class);
+Route::resource('/services/industrial-cleaning', IndustrialcleaningController::class);
+Route::resource('/services/postconstruction-cleaning', PostconstructioncleaningController::class);
+Route::resource('/services/afterparty-cleaning', AfterpartycleaningController::class);
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
