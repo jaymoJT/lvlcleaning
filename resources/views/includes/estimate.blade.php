@@ -2,32 +2,34 @@
     <div class="container wrapper">
          <form   method="GET" >
             @csrf
-            <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" class="form-control" name="name" require="required" />
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="zip" placeholder="ZIP Code" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="rooms" placeholder="Rooms" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="baths" placeholder="Baths" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control" name="date" placeholder="Date" required="require" />
+                </div>
             </div>
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email"  class="form-control" name="email" require="required" />
-            </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel"  class="form-control" name="phone" require="required" />
-            </div>
-            <div class="form-group">
-                <label>City</label>
-                <input type="text"  class="form-control" name="city" required="require" />
-            </div>
-            <div class="form-group">
-                <label>Address</label>
-                <input type="address"  class="form-control" name="address" required="require" />
-            </div>
-            <div class="form-group">
-                <label>Description</label>
-                <textarea class="form-control" name="description"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary">Submit</button>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="time" class="form-control" name="time" placeholder="time" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <input type="tel" class="form-control" name="phone" placeholder="Phone" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <input type="email" class="form-control" name="email" placeholder="" required="require" />
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary">Get a Price</button>
+                </div>
             </div>
          
 
