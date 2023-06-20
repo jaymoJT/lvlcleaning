@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Garamond !important;
     font-size:110% !important;
+    color: #3a3a3a;
 }
 a {
   color:#0d0d0d !important;
@@ -15,8 +18,18 @@ a:hover {
 .grey-body {
   background-color: #F1F1F1 !important;
 }
-h5 {
+.blue-body {
+  background: linear-gradient(to right, #2A2666, #E537C2) ;
+  color:#fff;
+}
+.service-section {
+  background-color: #f2f6f7 !important;
+}
+
+h1, h2, h3, h4, h5 {
   color: #2A2666 !important; 
+  font-family: 'Sorts Mill Goudy', serif !important;
+  font-weight: bold !important;
 }
 
 .home_banner {
@@ -71,6 +84,16 @@ h5 {
       -webkit-box-shadow: 0 0 0 0.2rem white;
               box-shadow: 0 0 0 0.2rem white; 
             }           
+
+.form-control {
+  border-radius: 20px !important;
+    margin-bottom: 15px;
+    /* padding: 6px 15px; */
+    background-color: #e5e7eb !important;
+    border:none !important;
+    text-align: center !important;
+}
+
 
 .has-search .form-control {
     padding-left: 2.375rem;
@@ -214,7 +237,7 @@ h5 {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
-    border-radius: 8px;
+    border-radius: 20px !important;
     box-shadow: 0px 4px 15px -3px rgba(0,0,0,0.1);
    }
     .card.card-load .card-loader {
@@ -454,4 +477,12 @@ h5 {
 }
 .bg-light{
   background-color: #fff !important;
+}
+#material-text {
+  font-size:120%;
+  line-height: 150%;
+}
+.material-symbols-outlined {
+    display: inline-flex;
+    vertical-align: top;
 }

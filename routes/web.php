@@ -10,6 +10,7 @@ use App\Http\Controllers\CarpetcleaningController;
 use App\Http\Controllers\IndustrialcleaningController;
 use App\Http\Controllers\PostconstructioncleaningController;
 use App\Http\Controllers\AfterpartycleaningController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +38,7 @@ Route::resource('/services/carpet-cleaning', CarpetcleaningController::class);
 Route::resource('/services/industrial-cleaning', IndustrialcleaningController::class);
 Route::resource('/services/postconstruction-cleaning', PostconstructioncleaningController::class);
 Route::resource('/services/afterparty-cleaning', AfterpartycleaningController::class);
+Route::resource('/contact', ContactController::class);
 
 
 Route::get('/dashboard', function () {

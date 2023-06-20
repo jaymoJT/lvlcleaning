@@ -2,6 +2,7 @@
 
     <div class="pictures">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="{{asset('images/slider/deep-cleaning.png')}}" class="d-block w-100" alt="...">
@@ -24,69 +25,137 @@
           </div>
     </div>
 
-    {{-- <div class="home-banner">
-        <div class="p-5 home_banner">
-            <div class="container wrapper">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2 class=" home_banner_title">Focus on your business' growth.</h2>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="card">
-                            <div class="card-header">
-                                Get Estimate
-                            </div>
-                            <div class="card-body">
-                                
-                            </div>
-                        </div>
-
-                    </div>                
-                </div>
-            </div>
-               
-        </div>
-    </div> --}}
+ 
     <div class="color-stripe purple-gradient ">
         <div class="d-flex align-items-center justify-content-center " >
             <div class="card" style="margin-top:-8%;">
-                <div class="card-header">
-                    <h4 class="d-flex justify-content-center">Cleaning Estimate</h4>
+                <div class="card-body">
+                    <h5>Cleaning Estimate</h5>
+                    @include('includes.estimate') 
                 </div>
-                @include('includes.estimate') 
+               
             </div>
         </div>
        
         <div class="container wrapper">
-            <div class="row">
+            <div class="row" style="margin-bottom:4%; margin-top: 4%;">
                 <div class="col-md-3 column-separator">
-                    <strong>Weekly (Most Popular)</strong>
+                    <strong>Weekly (Most Popular)</strong><br>
                     <p>
                         You have the option of scheduling a once-weekly cleaning visit from the LVL Cleaning team.
                     </p>
                 </div>
                 
                 <div class="col-md-3 column-separator">
-                    <strong>Every Other Week</strong>
+                    <strong>Every Other Week</strong><br>
                     <p>
                         Every two weeks, a cleaning will be scheduled for your home by our cleaning staff.
                     </p>
                 </div>
                 
                 <div class="col-md-3 column-separator">
-                    <strong>Once a Month</strong>
+                    <strong>Once a Month</strong><br>
                     <p>
                         Some of our clients would prefer a deep cleaning or spring cleaning once a month.
                     </p>
                 </div>
                 <div class="col-md-3 justify-content-center py-5">
-                    <button class="btn btn-primary">Join</button>
+                    <button class="btn btn-primary rounded-pill">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why-section">
+        <div class="container wrapper">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="big-image">
+                        <img src="{{asset('images/office-cleaning.jpg')}}"  class="img-fluid" style="border-radius: 20px !important;" />
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="wrapper">
+                        <h6><strong> About lvl Cleaning</strong> </h6>
+                    <h1>You ofcourse need us.</h1>
+                    <p>Our cleaning services are executed by a highly professional team with extensive skills and expertise. Our services will help you;</p>
+                    <p><span class="material-symbols-outlined" style="color:#E537C2; font-weight:bold;">done</span> <strong>Save your time for other activities.</strong></p>
+                    <p><span class="material-symbols-outlined" style="color:#E537C2; font-weight:bold;">done</span> <strong>Reserve your energy to invest in productive areas.</strong></p>
+                    <p><span class="material-symbols-outlined" style="color:#E537C2; font-weight:bold;">done</span> <strong>Professional Cleaning which is not your thing.</strong> </p>
+                    <p><span class="material-symbols-outlined" style="color:#E537C2; font-weight:bold;">done</span> <strong>Swift Service and you are done with the cleaning plan.</strong> </p><br>
+                    <a href="tel:+1(402) 937-2794" class="btn btn-primary rounded-pill material-text" style="color: #fff !important;">
+                        <span class="material-symbols-outlined">call</span>Make a Call
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="home-booking">
+    <div class="service-section">
+        <div class="container wrapper">
+            <div class="section-title">
+                <h1>Our featured Services</h1>
+                <div class="wrapper">
+                    <p>
+                        The world is moving quickly, with busy schedules and massive tasks. Despite everything, productivity is still essential and in it all, it still remains important to have time for yourself and your loved ones. We come in to help you save more time in your space. We take care of the cleaning so that you can save your time and energy for other commitments. However, we don't just clean for you; we do it well. For any of the following areas, please invite us for either a routine appointment or a one-time visit.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>
+                                        <span class="material-symbols-outlined" style="font-size:200% !important; color:#E537C2; ">in_home_mode</span><br>
+                                        Home Cleaning
+                                    </h5>
+                                    <p>Spend time with your family as we clean your house, whether on regular basis or on a one time schedule.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>
+                                        <span class="material-symbols-outlined" style="font-size:200% !important; color:#E537C2;">print_connect</span><br>
+                                        Commercial Cleanng</h5>
+                                        <p>We will clean your workstation, windows, store shelves, carpets and anything in your workspace.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>
+                                        <span class="material-symbols-outlined" style="font-size:200% !important; color:#E537C2;">factory</span><br>
+                                        Industrial Cleaning</h5>
+                                        <p>Our team is skillrd in cleaning factories, plants and industries, letting your staff stay productive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>
+                                        <span class="material-symbols-outlined" style="font-size:200% !important; color:#E537C2;">celebration</span><br>
+                                        After-party Cleaning</h5>
+                                        <p>People leave after a party, we come with the fresh energy to get your space to it's initial clean state.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- <div class="home-booking">
         <div class="container wrapper">
             <h3 class="home-booking-text">Book a cleaning schedule</h3>
             <div class="row">
@@ -150,15 +219,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="customer-centered">
         <div class="container wrapper">
-            <h3>Customer-centered Service</h3>
+            <h1>Customer-centered Service</h1>
             <div class="row">
-                <div class="col-md-6">
-                    <img src="{{asset('images/cleaning-service.png')}}" class="img-fluid" />
-                </div>
                 <div class="col-md-6">
                     <div class="wrapper text-center py-5">
                         <p>
@@ -166,13 +232,17 @@
                         </p>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <img src="{{asset('images/home-banner.jpg')}}" class="img-fluid" style="border-radius: 20px !important;" />
+                </div>
+                
             </div>
         </div>
     </div>
 
     <div class="customer-care purple-gradient">
         <div class="container wrapper">
-            <h3>Served well?</h3>
+            <h1 style="color: #fff !important;">Served well?</h1>
             <p class="wrapper">
                 Here is our customer care center. Please rate our performance on how we served you. Feel free to let us know immediately if you happen to be unhappy with our work at your place or if you have any particular requirements so that we can fulfill them tomorrow.
             </p>
@@ -188,7 +258,7 @@
     </div>
     <div class="why-us">
         <div class="container wrapper">
-            <h3>Why Us</h3>
+            <h1>Why Us</h1>
             <div class="wrapper">
                 <p>
                     When you engage with LVL's, we genuinely take the time to hear about your requirements and expectations up front so that we can develop a commercial cleaning strategy that works for you. We still want to hear from you after that plan is in place.

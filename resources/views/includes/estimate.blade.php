@@ -25,10 +25,10 @@
                     <input type="tel" class="form-control" name="phone" placeholder="Phone" required="require" />
                 </div>
                 <div class="col-md-3">
-                    <input type="email" class="form-control" name="email" placeholder="" required="require" />
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="require" />
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary">Get a Price</button>
+                    <button class="btn btn-primary rounded-pill">Get a Price</button>
                 </div>
             </div>
          

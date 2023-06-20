@@ -34,7 +34,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-body-primary" href="#">Get in touch</a>
+                <a class="nav-link text-body-primary" href="{{url('contact')}} ">Get in touch</a>
             </li>
            
             @if (auth()->check() )
@@ -61,7 +61,7 @@
               </li> 
 
             @else
-                <a href="/login" class="btn btn-primary rounded-pill">Login</a>
+                <a href="/login" class="btn btn-primary rounded-pill" style="color: #fff !important ;">Login</a>
             @endif
             
           </ul>
