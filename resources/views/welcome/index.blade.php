@@ -57,7 +57,7 @@
     </div>
     <div class="why-section">
         <div class="d-flex align-items-center justify-content-center " >
-            <div class="card" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; ">
+            <div class="card" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;">
                 <div class="card-body">
                     <h5>Cleaning Estimate</h5>
                     @include('includes.estimate') 
@@ -152,7 +152,7 @@
     
 
     <div class="customer-care purple-gradient">
-        <div class="container wrapper">
+        <div class="container wrapper" >
             <h1 style="color:#fff !important;">Customer-centered Service</h1>
             <div class="row">
                 <div class="col-md-6">
@@ -167,7 +167,7 @@
                 </div>
                 
             </div>
-            <div class="">
+            <div class="" style="margin-bottom:8%;">
                 <h4 style="color: #fff !important;">Served well?</h4>
                 <p>
                     Here is our customer care center. Please rate our performance on how we served you. Feel free to let us know immediately if you happen to be unhappy with our work at your place or if you have any particular requirements so that we can fulfill them tomorrow.
@@ -183,17 +183,23 @@
         </div>
     </div>
 
-    <div class="">
-        
-    </div>
+   
     <div class="why-us">
-        <div class="container wrapper">
-            <h1>Why Us</h1>
-            <div class="wrapper">
-                <p>
-                    When you engage with LVL's, we genuinely take the time to hear about your requirements and expectations up front so that we can develop a commercial cleaning strategy that works for you. We still want to hear from you after that plan is in place.
-                </p>
+        <div class="d-flex align-items-center justify-content-center " >
+            <div class="card" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;">
+                <div class="card-body">
+                    <section class="">
+                        <div class="container wrapper">
+                            <h1>Why Us</h1>
+                        <p>When you engage with LVL's, we genuinely take the time to hear about your requirements and expectations up front so that we can develop a commercial cleaning strategy that works for you. We still want to hear from you after that plan is in place.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
+        </div>
+
+        <div class="container wrapper">
+            
             <div class="row">
                 <div class="col-md-6 wrapper">
                     <img src="{{asset('images/cleaning-staff.jpeg')}} " class=" img-fluid" style="border-radius: 20px !important;" />

@@ -562,3 +562,9 @@ h1, h2, h3, h4, h5 {
 .features {
   background-color: #f2f6f7 !important;
 }
+li a .footer-links {
+  text-decoration: none !important;
+}
+.img-fluid {
+  border-radius: 20px !important;
+}
