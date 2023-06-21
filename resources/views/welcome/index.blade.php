@@ -2,16 +2,33 @@
 
     <div class="pictures">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
             
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="{{asset('images/slider/deep-cleaning.png')}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="{{asset('images/slider/general-cleaning.png')}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
               </div>
               <div class="carousel-item">
                 <img src="{{asset('images/slider/lvl-cleaning.png')}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -102,7 +119,7 @@
             </div>
             <div class="row">
                 <div class="col-md-3 text-center">
-                    <div class="card1" href="#">
+                    <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>Home Cleaning</h5>
                         <p class="small">Spend time with your family as we clean your house, whether on regular basis or on a one time schedule.</p>
                         <div class="go-corner" href="#">
@@ -113,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card1" href="#">
+                    <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>Commercial Cleaning</h5>
                         <p class="small">We will clean your workstation, windows, store shelves, carpets and anything in your workspace; your shop or office.</p>
                         <div class="go-corner" href="#">
@@ -124,7 +141,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card1" href="#">
+                    <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>Industrial Cleaning</h5>
                         <p class="small">Our team is skilled in cleaning factories, plants and industries, letting your staff stay productive in important roles.</p>
                         <div class="go-corner" href="#">
@@ -135,7 +152,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card1" href="#">
+                    <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>After-party Cleaning</h5>
                         <p class="small">People leave after a party, we come with the fresh energy to get your space to it's initial clean state.</p>
                         <div class="go-corner" href="#">
@@ -206,7 +223,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card features text-center">
+                            <div class="card features text-center" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                                 <div class="card-body">
                                     <strong>Trained Staff</strong>
                                         <p>Every one of our maids is skilled and their backgrounds checked, trained, and evaluated.</p>
@@ -214,7 +231,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card features text-center">
+                            <div class="card features text-center" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                                 <div class="card-body">
                                     <strong>Transparent</strong>
                                     <p>Clear pricing from begining. No secret additional fees; supplies are included in the price.</p>
@@ -224,7 +241,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card features text-center">
+                            <div class="card features text-center" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                                 <div class="card-body">
                                     <strong>Customized Services</strong>
                                     <p>We have tailored our services to meet all needs, from little to enormous places and budgets.</p>
@@ -232,7 +249,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card features text-center">
+                            <div class="card features text-center" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                                 <div class="card-body">
                                     <strong>Easy Online Booking</strong>
                                     <p>It takes a few minutes to mark us into your calendar from your favourite device and anywhere.</p>

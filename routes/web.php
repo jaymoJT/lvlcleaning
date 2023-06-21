@@ -11,6 +11,7 @@ use App\Http\Controllers\IndustrialcleaningController;
 use App\Http\Controllers\PostconstructioncleaningController;
 use App\Http\Controllers\AfterpartycleaningController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,7 @@ Route::resource('/services/industrial-cleaning', IndustrialcleaningController::c
 Route::resource('/services/postconstruction-cleaning', PostconstructioncleaningController::class);
 Route::resource('/services/afterparty-cleaning', AfterpartycleaningController::class);
 Route::resource('/contact', ContactController::class);
+Route::resource('/booking/', BookController::class);
 
 
 Route::get('/dashboard', function () {

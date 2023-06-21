@@ -36,8 +36,11 @@
             <li class="nav-item">
                 <a class="nav-link text-body-primary" href="{{url('contact')}} ">Get in touch</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary rounded-pill" href="{{url('booking')}} "  style="color:#fff !important;">Book Now</a>
+          </li>
            
-            @if (auth()->check() )
+            {{-- @if (auth()->check() )
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ Auth::user()->name  }}
@@ -46,7 +49,7 @@
                     <li><a class="dropdown-item" href="{{route('profile.edit')}} ">{{ __('Profile') }}</a></li>
                     
                     <li>
-                        {{-- <a class="dropdown-item" href="#">Action</a> --}}
+                       
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
       
@@ -62,7 +65,7 @@
 
             @else
                 <a href="/login" class="btn btn-primary rounded-pill" style="color: #fff !important ;">Login</a>
-            @endif
+            @endif --}}
             
           </ul>
         </div>
