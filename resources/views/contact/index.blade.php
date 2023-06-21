@@ -4,38 +4,42 @@
             <div class="wrapper-big">
                 <div class="row">
                     <div class="col-md-6">
-                       <form class="form-inline">
-                           <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control" required="require" name="name" />
-                           </div>
-                           <div class="form-group">
-                            <label>Phone</label>
-                            <input type="tel" class="form-control" name="phone" required="require" />
-                           </div>
-                           <div class="form-group">
-                            <label>Message</label>
-                            <textarea class="form-control" name="message"  required="require">Message</textarea>
-                           </div>
-                           <div class="form-group">
-                            <button class="btn btn-primary">Send</button>
-                           </div>
-                       </form>
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                     <label>Name</label>
+                                     <input type="text" class="form-control" required="require" name="name" />
+                                    </div>
+                                    <div class="form-group">
+                                     <label>Phone</label>
+                                     <input type="tel" class="form-control" name="phone" required="require" />
+                                    </div>
+                                    <div class="form-group">
+                                     <label>Message</label>
+                                     <textarea class="form-control" name="message"  required="require">Message</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                     <button class="btn btn-primary rounded-pill">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 float-start">
-                        <h3>Reach Out</h3>
+                        <h3 style="color:#fff !important;">Reach Out</h3>
                         <div class="wrapper">
                             <p>If you have any questions, you should definitely get in touch with us </p>
                         <div class="row">
                             <div class="col-6">
-                                <h4>
+                                <h4 style="color:#fff !important;">
                                    <span class="material-symbols-outlined">phone_iphone</span>
                                    Call Us
                                 </h4>
                                <a href="tel+1(402) 937-2794" style="color: #fff !important; text-decoration:none;">+1(402) 937-2794</a>
                             </div>
                             <div class="col-6">
-                                <h4>
+                                <h4 style="color:#fff !important;">
                                     <span class="material-symbols-outlined">location_on</span>
                                     Address
                                 </h4>
@@ -43,7 +47,7 @@
                             </div>
                         </div>
                         <div class="mail">
-                            <h4>
+                            <h4 style="color:#fff !important;">
                                 <span class="material-symbols-outlined">mail</span>
                                 Mail Us
                             </h4>

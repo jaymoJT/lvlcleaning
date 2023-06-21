@@ -1,50 +1,28 @@
 <x-app-layout>
 
-    <div class="pictures">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="{{asset('images/slider/deep-cleaning.png')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="{{asset('images/slider/general-cleaning.png')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="{{asset('images/slider/lvl-cleaning.png')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <div class="home-banner">
+        <div class="p-5 home_banner">
+                <div class="row">
+                    <div class="col-md-7">
+                        
+                    </div>
+                    <div class="col-md-5 justify-content-sm-center">
+                        <div class="container text-center py-5">
+                            <h1 class=" home_banner_title">Fastest growing customer-centered cleaning services provider in Nebraska.</h1>
+                            <p style="color:#fff !important;">
+                                You’ve come to the perfect site if you’re seeking for trustworthy and reasonably priced office cleaning in Nebraska. Professional cleaners and over a decade of industry knowledge are combined at LVL Professional Cleaning Services.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
     </div>
 
  
     <div class="color-stripe purple-gradient ">
-        <div class="container wrapper">
+        <div class="container wrapper text-center">
+            <h1 style="color:#fff !important;">Simple cleaning plans</h1>
             <div class="row" style="margin-bottom:6%; margin-top: 4%;">
                 <div class="col-md-3 column-separator text-center">
                     <strong>Weekly (Most Popular)</strong><br>
@@ -121,7 +99,7 @@
                 <div class="col-md-3 text-center">
                     <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>Home Cleaning</h5>
-                        <p class="small">Spend time with your family as we clean your house, whether on regular basis or on a one time schedule.</p>
+                        <p class="small">Spend time with your family or self as we clean your house, whether on regular basis or on a one time schedule.</p>
                         <div class="go-corner" href="#">
                           <div class="go-arrow">
                             <span class="material-symbols-outlined" style="font-size:200% !important; color:#fff; ">in_home_mode</span><br>
@@ -154,7 +132,7 @@
                 <div class="col-md-3 text-center">
                     <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
                         <h5>After-party Cleaning</h5>
-                        <p class="small">People leave after a party, we come with the fresh energy to get your space to it's initial clean state.</p>
+                        <p class="small">Friends get tired and leave after a party, we come with the fresh energy to get your space to it's initial clean state.</p>
                         <div class="go-corner" href="#">
                           <div class="go-arrow">
                             <span class="material-symbols-outlined" style="font-size:200% !important; color:#fff; ">celebration</span><br>

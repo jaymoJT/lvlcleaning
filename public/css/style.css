@@ -41,7 +41,9 @@ h1, h2, h3, h4, h5 {
 
 .home_banner {
     /* background-image: url('/images/home-banner.png'); */
-    background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.349)), url("/images/home-banner.jpg");
+    
+    background: linear-gradient(to right, #2a266600, rgba(0, 0, 0, 0.349)), url("/images/cleaner-banner.jpg") ;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.349)), ; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -212,6 +214,11 @@ h1, h2, h3, h4, h5 {
 .wrapper-small {
   padding-top: 15px !important;
   padding-bottom: 10px !important;
+}
+.wrapper-tiny {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  
 }
 .wrapper-big {
   padding-top: 50px !important;
@@ -571,4 +578,8 @@ li a .footer-links {
 }
 .img-fluid {
   border-radius: 20px !important;
+}
+.top-nav {
+  background-color: #2A2666 !important;
+  color:#fff !important;
 }

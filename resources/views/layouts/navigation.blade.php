@@ -1,4 +1,22 @@
 
+<div class="top-nav">
+  <div class="container wrapper-tiny">
+    <div class="row">
+      <div class="col-6">
+        <div class="text float-start"><small>Welcome to <strong>LVL Cleaning services LLC</strong></small></div>
+      </div>
+      <div class="col-6">
+        <div class="text float-end">
+            <a href=""><i class="bi bi-facebook" style="color:#fff !important;"></i></a> &nbsp;
+            <a href=""><i class="bi bi-twitter" style="color:#fff !important;"></i></a> &nbsp;
+            <a href=""><i class="bi bi-instagram" style="color:#fff !important;"></i></a> &nbsp;
+            <a href=""><i class="bi bi-linkedin" style="color:#fff !important;"></i></a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
 <nav class="navbar  navbar-expand-lg navbar-light " aria-label="Offcanvas navbar large">
     <div class="container container-fluid">
       <a class="navbar-brand" href="#">
