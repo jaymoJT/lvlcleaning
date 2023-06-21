@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        {{-- <meta name="description" content="@yield('meta_description')"> --}}
+        <meta name="description" content="LVL Cleaning services LLC is the fastest growing professional cleaning service provider in Nebraska, fast in cleaning and reliable, trustworthy cleaning staff in Nebraska">
+        
         <title>{{ config('app.name', 'lvlcleaning') }}</title>
 
         <!-- Fonts -->
@@ -12,7 +14,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
 
         <link href="{{asset('css/style.css')}}" rel="stylesheet" />
-
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/icon.png') }}">
         {{-- bootstrap styles CDN --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
