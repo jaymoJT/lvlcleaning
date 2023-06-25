@@ -12,6 +12,7 @@ use App\Http\Controllers\PostconstructioncleaningController;
 use App\Http\Controllers\AfterpartycleaningController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\EstimateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,6 +42,8 @@ Route::resource('/services/postconstruction-cleaning', PostconstructioncleaningC
 Route::resource('/services/afterparty-cleaning', AfterpartycleaningController::class);
 Route::resource('/contact', ContactController::class);
 Route::resource('/booking/', BookController::class);
+
+Route::post('/estimate', [EstimateController::class, 'sendestimate'])->name('estimate.send');
 
 
 Route::get('/dashboard', function () {

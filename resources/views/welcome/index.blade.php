@@ -52,7 +52,7 @@
     </div>
     <div class="why-section">
         <div class="d-flex align-items-center justify-content-center " >
-            <div class="card" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;">
+            <div class="card wow slideInLeft" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="card-body">
                     <h5>Cleaning Estimate</h5>
                     @include('includes.estimate') 
@@ -120,8 +120,8 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="card1" href="#" style="box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important;">
-                        <h5>Industrial Cleaning</h5>
-                        <p class="small">Our team is skilled in cleaning factories, plants and industries, letting your staff stay productive in important roles.</p>
+                        <h5>Move in/Move out Cleaning</h5>
+                        <p class="small">Your move in or out do not have to be a hustle, should not be a long process, start by letting us do the cleaning .</p>
                         <div class="go-corner" href="#">
                           <div class="go-arrow">
                             <span class="material-symbols-outlined" style="font-size:200% !important; color:#fff; ">factory</span><br>

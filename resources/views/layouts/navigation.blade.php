@@ -46,9 +46,9 @@
                    <li><a class="dropdown-item" href="{{url('services/afterparty-cleaning')}}">After-Party Cleaning</a> </li>
                    <li><a class="dropdown-item" href="{{url('services/deep-cleaning')}}">Deep Cleaning</a> </li>
                    <li><a class="dropdown-item" href="{{url('services/commercial-cleaning')}}">Commercial Cleaning</a> </li>
-                   <li><a class="dropdown-item" href="{{url('services/carpet-cleaning')}}">Carpet Cleaning</a> </li>
+                   {{-- <li><a class="dropdown-item" href="{{url('services/carpet-cleaning')}}">Carpet Cleaning</a> </li>
                    <li><a class="dropdown-item" href="{{url('services/industrial-cleaning')}}">Industrial Cleaning</a> </li>
-                   <li><a class="dropdown-item" href="{{url('services/postconstruction-cleaning')}}">Post-construction Cleaning</a> </li>
+                   <li><a class="dropdown-item" href="{{url('services/postconstruction-cleaning')}}">Post-construction Cleaning</a> </li> --}}
                 </ul>
             </li>
             <li class="nav-item">
