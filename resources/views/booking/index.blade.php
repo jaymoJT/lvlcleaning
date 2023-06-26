@@ -4,12 +4,28 @@
             <div class="wrapper-big">
                 <div class="section-title text-center">
                     <h1 style="color: #ffff !important;">Add us to your schedule anytime</h1>
+
+                    @if(session()->has('msg_danger'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill"></i> {{ session()->get('msg_danger') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                            @endif
+                            @if(session()->has('msg_success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <i class="bi bi-check-circle-fill" style="color:green !important;"></i> {{ session()->get('msg_success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                            @endif
+
+
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <form action="" method="post">
+                                <form action="{{route('booking.send')}}" method="post">
+                                    @csrf
                                     <div class="form-group">
                                       <label for="name">Your Name:</label>
                                       <input type="text" class="form-control" id="name" name="name" required>
@@ -34,16 +50,24 @@
                                         <option value="deep">Deep Cleaning</option>
                                         <option value="commercial">Commercial Cleaning</option>
                                         <option value="party">After-party Cleaning</option>
-                                        <option value="carpet">Carpet Cleaning</option>
-                                        <option value="industrial">Industrial Cleaning</option>
-                                        <option value="construction">Post construction Cleaning</option>
                                         <option value="other">Other</option>
                                       </select>
                                     </div>
-                                    <div class="form-group">
-                                      <label for="date">Preferred Date:</label>
-                                      <input type="date" class="form-control" id="date" name="date" required>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label for="date">Preferred Date:</label>
+                                                <input type="date" class="form-control" id="pref_date" name="pref_date" required>
+                                              </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Preferred Time:</label>
+                                                <input type="time" class="form-control" name="pref_time" required="require">
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                     <div class="form-group">
                                       <label for="message">Additional Message:</label>
                                       <textarea class="form-control" id="message" name="message" rows="5"></textarea>
@@ -55,7 +79,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 float-start">
-
+                        
                         <div class="wrapper">
                             <img src="{{asset('images/cleaning-service.jpeg')}}" class="img-fluid" >
                         </div>

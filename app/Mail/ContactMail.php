@@ -8,30 +8,27 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use App\Models\estimates;
+use App\Models\contacts;
 
-class EstimateFormMail extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    
-    
     /**
      * Create a new message instance.
      */
     public function __construct(
-        public estimates $estimate,
-        
-        )
-    {}
-    
+        public contacts $contacts
+    )
+    { }
+
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Cleaning estimate Request',
+            subject: 'LVL message from website',
         );
     }
 
@@ -41,7 +38,7 @@ class EstimateFormMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'estimate',
+            view: 'contacts',
         );
     }
 

@@ -8,7 +8,7 @@
                     <a href="{{url('about')}}" style="color: #fff !important; text-decoration:none;">About us</a><br>
                     <a href="{{url('contact')}}" style="color: #fff !important; text-decoration:none;">Get in-touch</a><br>
                     <a href="tel:+1(402) 937-2794" style="color: #fff !important; text-decoration:none;">+1(402) 937-2794</a><br>
-                    <a href="mailto:info@lvlcleaning.com" style="color: #fff !important; text-decoration:none;">info@lvlcleaning.com</a><br>
+                    <a href="mailto:info@lvlcleaning.com" style="color: #fff !important; text-decoration:none;">hello@lvlcleaning.com</a><br>
                     <a href="#" style="color: #fff !important; text-decoration:none;">2433NW 44 Street Lincoln NE 68524</a>
                 </div>
             </div>

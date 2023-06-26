@@ -52,9 +52,21 @@
     </div>
     <div class="why-section">
         <div class="d-flex align-items-center justify-content-center " >
-            <div class="card wow slideInLeft" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="card wow slideInLeft" style="margin-top:-6%; box-shadow: 0px 4px 15px -3px rgba(2, 3, 73, 0.411) !important; margin-left:8px !important; margin-right: 8px !important; max-width:80% !important;" data-wow-duration="4s" data-wow-delay="3s">
                 <div class="card-body">
                     <h5>Cleaning Estimate</h5>
+                    @if(session()->has('msg_danger'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill"></i> {{ session()->get('msg_danger') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                            @endif
+                            @if(session()->has('msg_success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <i class="bi bi-check-circle-fill" style="color:green !important;"></i> {{ session()->get('msg_success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                            @endif
                     @include('includes.estimate') 
                 </div>
                

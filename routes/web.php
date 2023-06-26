@@ -12,7 +12,7 @@ use App\Http\Controllers\PostconstructioncleaningController;
 use App\Http\Controllers\AfterpartycleaningController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BookController;
-use App\Http\Controllers\EstimateController;
+use App\Http\Controllers\EstimatesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,9 +41,11 @@ Route::resource('/services/industrial-cleaning', IndustrialcleaningController::c
 Route::resource('/services/postconstruction-cleaning', PostconstructioncleaningController::class);
 Route::resource('/services/afterparty-cleaning', AfterpartycleaningController::class);
 Route::resource('/contact', ContactController::class);
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.send');
 Route::resource('/booking/', BookController::class);
+Route::post('/booking', [BookController::class, 'store'])->name('booking.send');
 
-Route::post('/estimate', [EstimateController::class, 'sendestimate'])->name('estimate.send');
+Route::post('/estimate', [EstimatesController::class, 'store'])->name('estimate.send');
 
 
 Route::get('/dashboard', function () {

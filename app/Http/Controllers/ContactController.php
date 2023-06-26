@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use ILluminate\Http\Response;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
+use App\Models\contacts;
 
 
 class ContactController extends Controller
@@ -29,7 +32,28 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if(
+            empty($request->input('name')) ||
+            empty($request->input('phone')) ||
+            empty($request->input('email')) ||
+            empty($request->input('message'))
+        ){
+            return redirect()->back()->with('msg_danger', 'Sorry, please check your inputs and try again!');
+        }else {
+              
+            $contact = new contacts();
+            $contact->name = $request->input('name');
+            $contact->phone = $request->input('phone');
+            $contact->email = $request->input('email');
+            $contact->message = $request->input('message');
+            $contact->save();
+
+            $adminEmail = "hello@lvlcleaning.com";
+            Mail::to($adminEmail)->send(new ContactMail($contact));
+
+            return redirect()->back()->with('msg_success', 'Message received successfully, thank you');
+
+        }
     }
 
     /**

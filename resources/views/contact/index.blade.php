@@ -2,11 +2,25 @@
     <div class="blue-body">
         <div class="container wrapper">
             <div class="wrapper-big">
+                @if(session()->has('msg_danger'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill"></i> {{ session()->get('msg_danger') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                @endif
+                @if(session()->has('msg_success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill" style="color:green !important;"></i> {{ session()->get('msg_success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                @endif
+
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <form class="form-inline">
+                                <form class="form-inline" action="{{route('contact.send')}}" method="POST" >
+                                    @csrf
                                     <div class="form-group">
                                      <label>Name</label>
                                      <input type="text" class="form-control" required="require" name="name" />
@@ -14,6 +28,10 @@
                                     <div class="form-group">
                                      <label>Phone</label>
                                      <input type="tel" class="form-control" name="phone" required="require" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <input type="email" class="form-control" name="email" required="require"/>
                                     </div>
                                     <div class="form-group">
                                      <label>Message</label>

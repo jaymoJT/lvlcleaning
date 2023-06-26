@@ -1,6 +1,6 @@
 <section class="">
     <div class="container wrapper">
-         <form   method="GET" >
+         <form   method="POST" action="{{route('estimate.send')}}"  >
             @csrf
             <div class="row">
                 <div class="col-md-3">
